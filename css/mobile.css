@@ -1,0 +1,56 @@
+@media (max-width: 767.98px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+
+  .nav-text {
+    display: block;
+    margin: 5px 0;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+  }
+
+  .nav-name {
+    display: none; /* Hide navbar */
+  }
+
+  #info {
+    grid-template-columns: 1fr !important;
+  }
+
+  .bio-container {
+    grid-template-columns: 1fr;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .certificate-item {
+    flex-direction: column;
+    border-right: none !important;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-icon {
+    font-size: 6vw;
+  }
+
+  .social-link {
+    flex-direction: column;
+    align-items: center;
+  }
+}

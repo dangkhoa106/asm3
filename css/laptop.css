@@ -1,0 +1,489 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  filter: brightness(60%);
+  object-fit: cover;
+}
+
+.banner-container {
+  position: relative;
+  height: 400px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-text-name {
+  font-size: 40px;
+}
+
+.banner-text-info {
+  font-size: 10px;
+  font-family: open_sanslight;
+  color: #d4d4d4;
+}
+
+nav {
+  margin-top: 5px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.ib {
+  color: #199cdb;
+}
+
+.nav-text {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  border: #ebebeb solid 1px;
+  padding: 10px;
+}
+
+.nav-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.nav-name-name {
+  font-size: 30px;
+}
+
+.nav-name-info {
+  font-size: 10px;
+  color: #d4d4d4;
+}
+
+#info {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.info-goal,
+.info-info {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.info-goal {
+  background: rgb(245 245 245);
+}
+
+.info-info {
+  background: rgb(240 240 240);
+}
+
+.info-goal-info {
+  width: 90%;
+  margin-top: 50px;
+  line-height: 25px;
+}
+
+.info-info-info {
+  margin-top: 50px;
+}
+
+.info-content,
+.info-goal-info {
+  color: #555555;
+}
+
+.info-icons {
+  margin-top: 30px;
+}
+
+.bio-container *,
+.bio-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+.bio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Column styles */
+.bio-column {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Ratio for card sizes */
+  gap: 30px;
+}
+
+/* Card styles */
+.bio-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 30px;
+  height: 100%;
+}
+
+.bio-card-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+/* Experience section */
+.bio-experience-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.bio-experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.bio-current-badge {
+  background-color: #199cdb;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.bio-job-title {
+  font-weight: bold;
+  margin: 5px 20px;
+  position: relative;
+}
+
+.bio-job-title::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: #199cdb;
+  border-radius: 50%;
+}
+
+.bio-date {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* Custom list styling with blue bullets */
+.bio-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.bio-list li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* Interests section */
+.bio-interests-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+
+.bio-interest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio-interest-icon {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #199cdb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+/* Skills section */
+.bio-skill-item {
+  margin-bottom: 15px;
+}
+
+.bio-skill-name {
+  margin-bottom: 10px;
+}
+
+.bio-skill-level {
+  display: flex;
+  gap: 10px;
+}
+
+.bio-level-indicator {
+  width: 45px;
+  height: 2px;
+  background-color: #dee2e6;
+}
+
+.bio-level-indicator.active {
+  background-color: #199cdb;
+}
+
+/* Education details */
+.bio-education-item {
+  margin-bottom: 20px;
+}
+
+.bio-education-item:last-child {
+  margin-bottom: 0;
+}
+
+.bio-text-item {
+  color: #666;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.bio-gpa {
+  color: #666;
+  position: relative;
+  padding-left: 25px;
+}
+
+.bio-title-icon {
+  font-size: 50px;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+}
+
+.bio-interest-icons {
+  color: #199cdb;
+}
+
+.bio-list * {
+  color: #666;
+}
+
+#certificate {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+certificate h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 30px;
+}
+
+.certificate-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  &:first-child {
+    border-right: 1px solid #d6c08d;
+  }
+}
+
+.certificate-img {
+  width: 200px;
+  height: auto;
+}
+
+.certificate-info {
+  flex: 1;
+  padding: 10px;
+}
+
+.certificate-info h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.certificate-info p {
+  margin: 3px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+#project {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-title {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0;
+}
+
+.project-meta {
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.year-badge {
+  background: #00a8ff;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+}
+
+.meta-item {
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-details {
+  border-top: 1px solid #e0e0e0;
+}
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding: 10px 15px;
+  &:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+.detail-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-content {
+  color: #666;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.footer {
+  background: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #666;
+  gap: 8px;
+}
+
+.social-icon {
+  font-size: 30px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00a8ff;
+}
+
+.hide {
+  display: none !important;
+}
+
+.bio-card-content.collapsed {
+  display: none;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: #199cdb;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.bio-card-title:hover .toggle-btn {
+  text-decoration: underline;
+}
+
+.bio-card:hover button {
+  visibility: visible;
+}
+
+.bio-card:not(:hover) button {
+  visibility: hidden;
+}
